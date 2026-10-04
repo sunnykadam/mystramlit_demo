@@ -2,9 +2,9 @@ import os
 from langchain_openai import ChatOpenAI
 import streamlit as st
 
-NEW_KEY = os.getenv("NEW_KEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-llm = ChatOpenAI(model = "gpt-4o", api_key = NEW_KEY)
+llm = ChatOpenAI(model = "gpt-4o", api_key = OPENAI_API_KEY)
 
 st.title("Ask any question")
 
